@@ -1,0 +1,30 @@
+package string;
+/**
+ * @author D.V.Kovalevska
+ *  * @version 1.0
+ */
+
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class stringHw2 {
+    public static void main(String[] args) {
+        //Программа выводит на экран самое длинное слово
+    
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Input some text: ");
+        String text = sc.nextLine();
+
+        int symbols = 0; 
+        String word = " ";
+        String[] result = text.split("[ ]");
+        for (int i =0; i < result.length; i++) {
+            char [] sum = result[i].toCharArray();
+            if (symbols < sum.length){
+                symbols = sum.length;
+                word=result[i];
+            }
+        }
+        System.out.println("The longest word in the text is " + symbols + " letters long: " + word + ".");
+    }
+}
