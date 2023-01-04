@@ -1,0 +1,31 @@
+package academy.prog.sample;
+/**
+ * Class that demonstrates Java operators using.
+ *
+ * @author D.V.Kovalevska
+ * @version 1.0
+ */
+import java.util.Scanner;
+
+public class HomeWork1 {
+    /**
+     * method for finding the factorial of a number
+     * @param args command line arguments
+     */
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n;
+        long result =1;
+        System.out.println("Введіть число від 4 до 16: ");
+        n = sc.nextInt();
+        if((4<n) & (n<16)) {
+            for (int i = 1; i <= n; i++) {
+                result = result * i;
+            }
+            System.out.println("Факторіал числа " + n + " = " + result);
+        }else{
+            System.out.println("Будь ласка введіть число від 4 до 16");
+        }
+    }
+}
