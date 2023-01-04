@@ -1,0 +1,25 @@
+package string;
+/**
+ * @author D.V.Kovalevska
+ *  * @version 1.0
+ */
+import java.util.Scanner;
+
+public class stringHw1 {
+    public static void main(String[] args) {
+        //Считайте строку текста с клавиатуры. Подсчитайте сколько раз в нем встречается символ «b».
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter a string and press Enter");
+        String text = sc.nextLine();
+
+        int num = 0;
+        char[] array = text.toCharArray();
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 'b') {
+                num++;
+            }
+        }
+        System.out.println("Cимволов b в тексте " + num + ".");
+    }
+}
