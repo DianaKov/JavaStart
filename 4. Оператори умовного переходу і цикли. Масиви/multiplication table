@@ -1,0 +1,22 @@
+package academy.prog.lesson5;
+/**
+ * Class that demonstrates Java operators using.
+ *
+ * @author D.V.Kovalevska
+ * @version 1.0
+ */
+public class Homework2 {
+    /**
+     * Start method of the class.
+     * Program to print multiplication table of a number
+     * @param args command line arguments
+     */
+    public static void main(String[] args) {
+        int n = 5;
+        int res = 0;
+        for (int i = 1; i <= 10; i++) {
+            res = i * n;
+            System.out.println(i + " * " + n + " = " + res);
+        }
+    }
+}
