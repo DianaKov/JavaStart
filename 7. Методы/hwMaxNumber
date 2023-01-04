@@ -1,0 +1,25 @@
+package methods;
+
+/**
+ * author D.V. Kovalevskaya
+ * version1
+ */
+public class hwMaxNumber {
+
+    public static void main(String[] args) {
+        int [] array = new int [] {2, 51, 10, 11, 15};
+        int max = 0;
+        System.out.println(getMaxNumber(array));
+    }
+    private static int getMaxNumber(int[] array) {
+        //method finds the maximum number from the array
+
+        int currentMax = array [0];
+        for(int i=0; i< array.length; i++){
+            if (array[i] > currentMax ){
+                currentMax = array[i];
+            }
+        }
+        return currentMax;
+    }
+}
