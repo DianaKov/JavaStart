@@ -1,0 +1,23 @@
+package methods;
+/**
+ * author D.V. Kovalevskaya
+ * version1
+ */
+public class hwSearchElement {
+
+    public static void main(String[] args) {
+        int [] array = new int [] {7, 10, 12, 8, 4, 15};
+        int element = 15;
+        System.out.println(searchElement(array, element));
+    }
+    public static int searchElement(int [] array, int element){
+        //the method implements a linear search for an element in an array of integers
+
+        for(int i=0; i<array.length; i++){
+            if (array [i] == element){
+                return i;
+            }
+        }return -1;
+    }
+}
+
