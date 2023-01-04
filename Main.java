@@ -1,5 +1,5 @@
 /* Виводить на екран ПІБ та забезпечує введення рядка (ПІБ) з клавіатури */
-package prog.academy.lesson1;
+package sample;
 
 import java.util.Scanner;
 
